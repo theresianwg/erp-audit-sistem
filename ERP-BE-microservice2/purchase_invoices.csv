@@ -1,0 +1,3 @@
+ID,Invoice Number,Invoice Date,Due Date,Total Amount,Total Taxes,Total Price Item,Discounts,Received Date,Purchase Order ID,Payment Status,Purchase Down Payment Invoice ID,Description,Taxes Included,Created At,Updated At
+PDI202305090001,INV202305090003,2023-05-09,2023-06-09,299700.00,29700.00,270000.00,0.00,2023-06-26 17:25:47,PO202304050001,pending,,Purchase Down Payment Invoice for Purchase Order PO202304050001,true,2023-06-26 17:25:47,2023-06-26 17:25:47
+PDI202305090002,INV202305090005,2023-05-09,2023-06-09,244200.00,24200.00,220000.00,0.00,2023-06-26 17:25:47,PO202304050002,pending,,Purchase Down Payment Invoice for Purchase Order PO202304050002,true,2023-06-26 17:25:47,2023-06-26 17:25:47

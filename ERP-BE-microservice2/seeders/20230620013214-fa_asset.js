@@ -1,0 +1,80 @@
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+    async up(queryInterface, Sequelize) {
+        await queryInterface.bulkInsert(
+            'fa_assets',
+            [
+                {
+                    id: 'FA001',
+                    name: 'Mesin Penyusun Hiasan Alas',
+                    id_category: 'CA004',
+                    asset_code: 'FA00CA004120230621',
+                    id_supplier: 1,
+                    asset_type: 'Berwujud',
+                    department: 'Informatika',
+                    address: 'Jl. Raya ITS',
+                    age_of_asset: 0,
+                    purchase_date: new Date(),
+                    price: 50000000,
+                    asset_account: '111',
+                    quantity: 1,
+                    residual_value: 5000000,
+                    description: 'Mesin Penyusun Hiasan Alas',
+                    id_fiscal_type: 'FT004',
+                    status: 'Aktif',
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    id: 'FA002',
+                    name: 'Mesin Penyusun Hiasan Supporting',
+                    id_category: 'CA004',
+                    asset_code: 'FA00CA004120230622',
+                    id_supplier: 1,
+                    asset_type: 'Berwujud',
+                    department: 'Informatika',
+                    address: 'Jl. Raya ITS',
+                    age_of_asset: 0,
+                    purchase_date: new Date(),
+                    price: 23000000,
+                    asset_account: '111',
+                    quantity: 1,
+                    residual_value: 2300000,
+                    description: 'Mesin Penyusun Hiasan Supporting',
+                    id_fiscal_type: 'FT004',
+                    status: 'Aktif',
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+                {
+                    id: 'FA003',
+                    name: 'Mesin Pembuat Cake',
+                    id_category: 'CA004',
+                    asset_code: 'FA00CA004120230623',
+                    id_supplier: 1,
+                    asset_type: 'Berwujud',
+                    department: 'Informatika',
+                    address: 'Jl. Raya ITS',
+                    age_of_asset: 0,
+                    purchase_date: new Date(),
+                    price: 80000000,
+                    asset_account: '111',
+                    quantity: 1,
+                    residual_value: 8000000,
+                    description: 'Mesin Pembuat Cake',
+                    id_fiscal_type: 'FT004',
+                    status: 'Aktif',
+                    createdAt: new Date(),
+                    updatedAt: new Date(),
+                },
+            ],
+            {},
+        );
+    },
+
+    async down(queryInterface, Sequelize) {
+        await queryInterface.bulkDelete('fa_assets', null, {});
+    },
+};
